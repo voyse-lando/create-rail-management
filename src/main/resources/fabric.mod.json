@@ -1,25 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "createrailmanagement",
   "version": "${version}",
-  "name": "Example Mod",
+  "name": "Create: Rail Management",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Voyse Lando"
   ],
   "contact": {
-    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+    "sources": "https://github.com/voyse-lando/create-rail-management"
   },
-  "license": "CC0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/createrailmanagement/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.modid.ExampleMod"
+      "net.voyselando.createrailmanagement.CreateRM"
+    ],
+    "client": [
+      "net.voyselando.createrailmanagement.CreateRMClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "createrailmanagement.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
